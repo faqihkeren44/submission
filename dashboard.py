@@ -14,8 +14,8 @@ def create_monthly_orders_df(df):
     return monthly_orders_df
 
 
-orders = pd.read_csv("orders.csv")
-order_items = pd.read_csv("order_items.csv")
+orders = pd.read_csv("https://docs.google.com/spreadsheets/d/15eGB76Bvj7ac6RCR08vUeNucF57m6H6eEf9o79X-m80/edit#gid=522632585")
+order_items = pd.read_csv("https://docs.google.com/spreadsheets/d/1d7b2CNLo2kSRRTcF6ED8ZcyW1--at2t3DgZjpSYS85E/edit#gid=459401459")
 
 
 orders["order_purchase_timestamp"] = pd.to_datetime(orders["order_purchase_timestamp"])
